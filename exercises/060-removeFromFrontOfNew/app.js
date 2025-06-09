@@ -1,6 +1,10 @@
 function removeFromFrontOfNew(arr) {
     // your code here
+    let newArr = arr.slice()
     
+    newArr.shift()
+
+    return newArr
 }
 
 let arr = [1, 2, 3];

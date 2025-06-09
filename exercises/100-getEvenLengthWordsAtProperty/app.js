@@ -1,6 +1,12 @@
 function getEvenLengthWordsAtProperty(obj, key) {
-    // your code here
-    
+    if (obj.hasOwnProperty(key) && Array.isArray(obj.key)) {    
+        const newKey = obj.key.filter(item => item.length % 2 === 0)
+
+        return newKey
+    }
+    else {
+        return []
+    }
 }
 
 let obj = {
